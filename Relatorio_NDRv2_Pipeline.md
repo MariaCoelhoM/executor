@@ -183,8 +183,8 @@ STA  _tN               ; temporário de resultado
 
 | Arquivo | Expressão | Esperado | Obtido | Ciclos |
 |---|---|:---:|:---:|:---:|
-| `calculo_basico.nasm` | `(10 + 6) / 4` | 4 | **4** ✅ | 49 |
-| `equacao.nasm` | `2 * (3 + 4) - 5` | 9 | **9** ✅ | 82 |
+| `calculo_basico.nasm` | `(10 + 6) / 4` | 4 | **4**  | 49 |
+| `equacao.nasm` | `2 * (3 + 4) - 5` | 9 | **9**  | 82 |
 
 Em ambos os casos o Executor produziu o resultado correto, confirmando o funcionamento integrado de todas as etapas do pipeline.
 
@@ -192,6 +192,4 @@ Em ambos os casos o Executor produziu o resultado correto, confirmando o funcion
 
 ## 6. Conclusão
 
-O pipeline NASM v2 demonstra na prática o funcionamento de um compilador simplificado, desde a leitura de uma linguagem de alto nível com sintaxe própria até a simulação do hardware. A implementação em C com ponteiros de função em structs mantém modularidade e clara separação de responsabilidades.
-
-O assembler de duas passagens resolve corretamente *forward references* e detecta erros de símbolo indefinido e rótulo duplicado. O executor reproduz fielmente o ciclo Fetch-Decode-Execute da Máquina Neander, com atualização correta das flags N e Z e suporte completo ao conjunto de instruções definido.
+O projeto demonstra um pipeline completo de compilação, desde análise léxica até execução simulada. O assembler resolve referências corretamente e o executor implementa fielmente o ciclo da máquina Neander.
