@@ -134,7 +134,7 @@ static void gen(codegen_t *cg, ast_node_t *node, char *result_var) {
                quociente = 0; dividendo = A
                loop: if (dividendo - B) < 0 goto fim
                      dividendo -= B; quociente++
-               fim:  resultado = quociente (/) ou dividendo (%) */
+               fim:  resultado = quociente (/) ou dividendo (%)*/
             char quot[16], divid[16], um[16], nb[16];
             char lbl_loop[16], lbl_fim[16];
             new_tmp(cg, quot); new_tmp(cg, divid);
