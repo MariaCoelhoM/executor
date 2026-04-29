@@ -85,6 +85,16 @@ make test
 
 ---
 
+### 5. Repositório antigo
+
+Repositório antigo com o link do histórico:
+
+```bash
+https://github.com/MariaCoelhoM/executor
+```
+
+---
+
 ## 📊 Arquivos Gerados
 
 Após a execução, o pipeline gera automaticamente:
